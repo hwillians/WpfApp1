@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="WpfApp1.UserControls.Exo10"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <DockPanel>
+            <Label DockPanel.Dock="Top" Background="#FF43AEAE">DockPannel</Label>
+            <Menu DockPanel.Dock="Left" Background="#FFCDCD69" >
+                Menu de Gauche
+                <MenuItem Header="Option 1">
+                    <MenuItem Header="Option 1.1" Click="MenuItem_Click"/>
+                    <MenuItem Header="Option 1.2" Click="MenuItem_Click"/>
+                    <MenuItem Header="Option 1.3" Click="MenuItem_Click"/>
+                    <MenuItem Header="Option 1.4" Click="MenuItem_Click"/>
+                </MenuItem>
+                <MenuItem Header="Option 2">
+                    <MenuItem Header="Option 2.1" Click="MenuItem_Click"/>
+                    <MenuItem Header="Option 2.2" Click="MenuItem_Click"/>
+                    <MenuItem Header="Option 2.3" Click="MenuItem_Click"/>
+                </MenuItem>
+                
+                <MenuItem Header="Option 3">
+                    <MenuItem Header="Option 3.1" Click="MenuItem_Click"/>
+                    <MenuItem Header="Option 3.2" Click="MenuItem_Click"/>
+                </MenuItem>                       
+                <MenuItem Header="Option 4">      
+                    <MenuItem Header="Option 4.2" Click="MenuItem_Click"/>
+                </MenuItem>
+                <Menu.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel Orientation="Vertical"/>
+                    </ItemsPanelTemplate>
+                </Menu.ItemsPanel>
+            </Menu>
+            <TextBlock Name="contenu" Background="#FF16B4D6"/>
+        </DockPanel>
+
+    </Grid>
+</UserControl>

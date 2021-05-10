@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel >
+        <ComboBox SelectedIndex="0" SelectionChanged="ComboBox_SelectionChanged" >
+            <ComboBoxItem>Choisissez l'exercise</ComboBoxItem>
+            <ComboBoxItem Name="Exo1" >1 - Créer un StackPannel</ComboBoxItem>
+            <ComboBoxItem Name="Exo2">2 - Afficher un texte avec du gras, italique et de l’écriture en rouge</ComboBoxItem>
+            <ComboBoxItem Name="Exo3">3 - Faire un TextBox avec un label</ComboBoxItem>
+            <ComboBoxItem Name="Exo4">4 - Faire un bouton avec un texte et une image</ComboBoxItem>
+            <ComboBoxItem Name="Exo5">5 - Faire des radio boutons</ComboBoxItem>
+            <ComboBoxItem Name="Exo6">6 - Faire l’exo 1 en C#</ComboBoxItem>
+            <ComboBoxItem Name="Exo7">7 - Afficher une listebox en XAML rempli par le C#</ComboBoxItem>
+            <ComboBoxItem Name="Exo8">8 - Afficher une combobox en XAML rempli par le C#</ComboBoxItem>
+            <ComboBoxItem Name="Exo9">9 - Faire une grille qui affiche ces boutons</ComboBoxItem>
+            <ComboBoxItem Name="Exo10">10 -Faire un DockPannel avec un menu à gauche et du contenu à droite</ComboBoxItem>
+        </ComboBox>
+        <ContentControl Name="MainContent" Content="Bienvenue..."  />
+    </StackPanel>
+</Window>
